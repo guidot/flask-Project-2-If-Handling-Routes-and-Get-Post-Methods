@@ -6,12 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-<ul>
-{% for x in object %}
-     
-        <h2><li>Welcome to Clarusway {{ x }}!</li></h2>
-    
-{% endfor %} 
-</ul>
+    <div class="good">Hello dear
+        {% for name in names[0:-2] %}
+            {% if not name in ["Devil", "Lucifer"] %}
+                {{ name }},
+            {% endif %}
+        {% endfor %} {{ names[-2] }} and {{ names[-1] }} :)
+    </div>
+    <div class="evil">
+        (Not you, 
+        {% for name in names[0:-2] %}
+            {% if name in ["Devil", "Lucifer"] %}
+                {{ name }}
+            {% endif %}
+        {% endfor %}
+        )
+    </div>
+    <ul>
+        {% for x in object %}
+            <li>Hello dear <strong>{{ x }}</strong> :)</li>
+        {% endfor %} 
+        </ul>
+    <p>
+        <a href=/>Home</a>
+    </p>
 </body>
 </html>
