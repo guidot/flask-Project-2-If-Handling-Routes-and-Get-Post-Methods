@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculation of LCM</title>
+    <title>LCM calculation</title>
 </head>
 <body>
-    <h1>The Least Common Multiple<h1>
+    <h1>Least Common Multiple</h1>
     <form action="/calc" method="POST">
-        <input type="number" name = "number1"><br>
-        <input type="number" name = "number2"><br> 
-        <button>Calculate LCM</button>
+        <p>
+            <label for="name1">Number 1:</label>
+            <input type="number" name = "number1" id="name1" size="10"><br>
+            <label for="name2">Number 2:</label>
+            <input type="number" name = "number2" id="name1" size="10"><br>
+        </p>
+        <input type="submit" value="Calculate LCM" />
+        <input type="reset" value="Reset" />
     </form>
 </body>
 </html>
+
